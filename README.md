@@ -1,5 +1,5 @@
-# Structured Noise Injection
-Official tensorflow implementation of the CVPR2020 paper: Disentangled Image Generation Through Structured Noise Injection. We adapt the original StyleGAN architecture code from https://github.com/NVlabs/stylegan. 
+# Structured Noise Injection (Official TensorFlow Implementation)
+A TensorFlow implementation of structured noise injection as described in the paper. We adapt the original StyleGAN architecture code from https://github.com/NVlabs/stylegan. 
 
 The code allows:
 -  Disentangled editing of generated images (local features, mid-scale features, pose, and overall style)
