@@ -1,4 +1,7 @@
-# Structured Noise Injection (Official TensorFlow Implementation)
+# Structured Noise Injection
+Paper: https://arxiv.org/abs/2004.12411
+Video: https://youtu.be/7h-7wso9E0k
+
 A TensorFlow implementation of structured noise injection as described in the paper. We adapt the original StyleGAN architecture code from https://github.com/NVlabs/stylegan. 
 
 The code allows:
