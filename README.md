@@ -1,5 +1,5 @@
 # Structured Noise Injection
-Paper: https://arxiv.org/abs/2004.1241
+Paper: https://arxiv.org/abs/2004.12411
 
 Video: https://youtu.be/7h-7wso9E0k
 
