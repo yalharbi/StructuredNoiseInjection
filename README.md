@@ -48,6 +48,16 @@ The network can be trained similarly to training the original StyleGAN but with 
 
 Please refer to https://github.com/NVlabs/stylegan for the datasets and code requirements.
 
+# Frequently Asked Questions
+## Do you use specific losses?
+No. We use the existing GAN loss from in StyleGAN.
+
+## How do you enforce disentanglement?
+We use independent codes and independent mapping parameters per location (4x4 or 8x8). This enforces that each (x,y) location at the input tensor is influenced by only a single local code (plus the shared and global code).
+Other than that, we believe the achieved disentanglement is due to our selection of two codes: one that is more suitable for encoding spatial details, and one that is more suitable for encoding stylisitic information.
+
+## How does your method change attributes such as smile and eyeglasses without labels?
+Our method is not supervised, and the network is unaware during training of semantic labels such as smile and eyeglasses. However, disentangled editing is possible because we focus on locations instead of attributes. Due to our structure, the only noise entries that will affect the mouth are the noise cells aligned around the mouth. After training, the user can resample only the noise codes around the mouth to easily change the shape of the mouth and add/remove smile. By focusing on 'locking down' details of the face at different places of the noise codes, we enable disentangled editing without labels.
 
 
 # Testing new settings of structured noise injection
